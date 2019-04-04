@@ -19,5 +19,7 @@ abstract class TestCase extends BaseTestCase
     public function signIn($user = null)
     {
         $this->actingAs($user ?? create(User::class));
+
+        factory(Acme\Models\User::class)->states('pincopallino')->crate();
     }
 }
