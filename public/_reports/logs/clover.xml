@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1554468458">
-  <project timestamp="1554468458">
+<coverage generated="1554470262">
+  <project timestamp="1554470262">
     <package name="Acme\Http\Controllers\Api">
       <file name="/Users/sid/Code/web/blog-tdd/app/Acme/Http/Controllers/Api/ApiController.php">
         <class name="Acme\Http\Controllers\Api\ApiController" namespace="Acme\Http\Controllers\Api">
@@ -44,24 +44,24 @@
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Acme/Http/Controllers/Api/PostsController.php">
         <class name="Acme\Http\Controllers\Api\PostsController" namespace="Acme\Http\Controllers\Api">
-          <metrics complexity="5" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="4" elements="15" coveredelements="6"/>
+          <metrics complexity="5" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="5" elements="15" coveredelements="8"/>
         </class>
-        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="19" type="stmt" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <line num="21" type="stmt" count="1"/>
+        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
         <line num="23" type="method" name="index" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="34" type="stmt" count="1"/>
         <line num="72" type="method" name="store" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="74" type="stmt" count="0"/>
-        <line num="83" type="method" name="show" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="86" type="stmt" count="0"/>
+        <line num="83" type="method" name="show" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="86" type="stmt" count="1"/>
         <line num="97" type="method" name="update" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="99" type="stmt" count="0"/>
         <line num="100" type="stmt" count="0"/>
         <line num="103" type="stmt" count="0"/>
         <line num="105" type="stmt" count="0"/>
-        <metrics loc="107" ncloc="44" classes="1" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="4" elements="15" coveredelements="6"/>
+        <metrics loc="107" ncloc="44" classes="1" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="5" elements="15" coveredelements="8"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Acme/Http/Controllers/Api/RegisterController.php">
         <class name="Acme\Http\Controllers\Api\RegisterController" namespace="Acme\Http\Controllers\Api">
@@ -133,18 +133,18 @@
         <class name="Acme\Http\Resources\Post" namespace="Acme\Http\Resources">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="12" coveredelements="12"/>
         </class>
-        <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="18" type="stmt" count="1"/>
-        <line num="19" type="stmt" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <line num="21" type="stmt" count="1"/>
-        <line num="22" type="stmt" count="1"/>
-        <line num="23" type="stmt" count="1"/>
-        <line num="24" type="stmt" count="1"/>
-        <line num="25" type="stmt" count="1"/>
-        <line num="26" type="stmt" count="1"/>
-        <line num="27" type="stmt" count="1"/>
-        <line num="28" type="stmt" count="1"/>
+        <line num="15" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="18" type="stmt" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
         <metrics loc="31" ncloc="25" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="12" coveredelements="12"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Acme/Http/Resources/PostsCollection.php">
@@ -167,23 +167,23 @@
         <class name="Acme\Models\Post" namespace="Acme\Models">
           <metrics complexity="7" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="17" coveredelements="17"/>
         </class>
-        <line num="12" type="method" name="getRouteKeyName" visibility="public" complexity="1" crap="1" count="9"/>
-        <line num="14" type="stmt" count="9"/>
-        <line num="17" type="method" name="user" visibility="public" complexity="1" crap="1" count="5"/>
-        <line num="19" type="stmt" count="5"/>
-        <line num="22" type="method" name="category" visibility="public" complexity="1" crap="1" count="3"/>
-        <line num="24" type="stmt" count="3"/>
-        <line num="27" type="method" name="tags" visibility="public" complexity="1" crap="1" count="3"/>
-        <line num="29" type="stmt" count="3"/>
-        <line num="32" type="method" name="setTitleAttribute" visibility="public" complexity="1" crap="1" count="16"/>
-        <line num="34" type="stmt" count="16"/>
-        <line num="35" type="stmt" count="16"/>
-        <line num="36" type="stmt" count="16"/>
-        <line num="38" type="method" name="getFoobarAttribute" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="40" type="stmt" count="1"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="44" type="method" name="impostaSituazione" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="46" type="stmt" count="1"/>
+        <line num="12" type="method" name="getRouteKeyName" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="14" type="stmt" count="10"/>
+        <line num="17" type="method" name="user" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="19" type="stmt" count="6"/>
+        <line num="22" type="method" name="category" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="24" type="stmt" count="4"/>
+        <line num="27" type="method" name="tags" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="29" type="stmt" count="4"/>
+        <line num="32" type="method" name="setTitleAttribute" visibility="public" complexity="1" crap="1" count="17"/>
+        <line num="34" type="stmt" count="17"/>
+        <line num="35" type="stmt" count="17"/>
+        <line num="36" type="stmt" count="17"/>
+        <line num="38" type="method" name="getFoobarAttribute" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="44" type="method" name="impostaSituazione" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="46" type="stmt" count="2"/>
         <metrics loc="48" ncloc="48" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="17" coveredelements="17"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Acme/Models/Tag.php">
@@ -214,8 +214,8 @@
         <line num="11" type="stmt" count="2"/>
         <line num="14" type="method" name="createPost" visibility="public" complexity="1" crap="1" count="1"/>
         <line num="16" type="stmt" count="1"/>
-        <line num="19" type="method" name="show" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="21" type="stmt" count="1"/>
+        <line num="19" type="method" name="show" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="21" type="stmt" count="2"/>
         <line num="24" type="method" name="update" visibility="public" complexity="1" crap="1" count="4"/>
         <line num="26" type="stmt" count="4"/>
         <line num="28" type="stmt" count="4"/>
@@ -227,12 +227,12 @@
         <class name="App\Console\Kernel" namespace="App\Console">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
         </class>
-        <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="29" type="stmt" count="20"/>
-        <line num="36" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="38" type="stmt" count="20"/>
-        <line num="40" type="stmt" count="20"/>
-        <line num="41" type="stmt" count="20"/>
+        <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="1" count="21"/>
+        <line num="29" type="stmt" count="21"/>
+        <line num="36" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="21"/>
+        <line num="38" type="stmt" count="21"/>
+        <line num="40" type="stmt" count="21"/>
+        <line num="41" type="stmt" count="21"/>
         <metrics loc="42" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
       </file>
     </package>
@@ -440,19 +440,19 @@
         <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
         </class>
-        <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="17" type="stmt" count="20"/>
-        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="27" type="stmt" count="20"/>
+        <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="17" type="stmt" count="21"/>
+        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="27" type="stmt" count="21"/>
         <metrics loc="28" ncloc="14" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Providers/AuthServiceProvider.php">
         <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="26" type="stmt" count="20"/>
-        <line num="29" type="stmt" count="20"/>
+        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="26" type="stmt" count="21"/>
+        <line num="29" type="stmt" count="21"/>
         <metrics loc="30" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Providers/BroadcastServiceProvider.php">
@@ -469,44 +469,44 @@
         <class name="App\Providers\EventServiceProvider" namespace="App\Providers">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
         </class>
-        <line num="29" type="method" name="shouldDiscoverEvents" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="31" type="stmt" count="20"/>
-        <line num="39" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="41" type="stmt" count="20"/>
-        <line num="44" type="stmt" count="20"/>
+        <line num="29" type="method" name="shouldDiscoverEvents" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="31" type="stmt" count="21"/>
+        <line num="39" type="method" name="boot" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="41" type="stmt" count="21"/>
+        <line num="44" type="stmt" count="21"/>
         <metrics loc="45" ncloc="27" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </file>
       <file name="/Users/sid/Code/web/blog-tdd/app/Providers/RouteServiceProvider.php">
         <class name="App\Providers\RouteServiceProvider" namespace="App\Providers">
           <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
         </class>
-        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="28" type="stmt" count="20"/>
-        <line num="29" type="stmt" count="20"/>
-        <line num="36" type="method" name="map" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="38" type="stmt" count="20"/>
-        <line num="40" type="stmt" count="20"/>
-        <line num="42" type="stmt" count="20"/>
-        <line num="45" type="stmt" count="20"/>
-        <line num="54" type="method" name="mapWebRoutes" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="56" type="stmt" count="20"/>
-        <line num="57" type="stmt" count="20"/>
-        <line num="58" type="stmt" count="20"/>
-        <line num="59" type="stmt" count="20"/>
-        <line num="61" type="method" name="mapAuthRoutes" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="63" type="stmt" count="20"/>
-        <line num="64" type="stmt" count="20"/>
-        <line num="65" type="stmt" count="20"/>
-        <line num="66" type="stmt" count="20"/>
-        <line num="75" type="method" name="mapApiRoutes" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="77" type="stmt" count="20"/>
-        <line num="78" type="stmt" count="20"/>
-        <line num="79" type="stmt" count="20"/>
-        <line num="80" type="stmt" count="20"/>
-        <line num="81" type="stmt" count="20"/>
+        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="28" type="stmt" count="21"/>
+        <line num="29" type="stmt" count="21"/>
+        <line num="36" type="method" name="map" visibility="public" complexity="1" crap="1" count="21"/>
+        <line num="38" type="stmt" count="21"/>
+        <line num="40" type="stmt" count="21"/>
+        <line num="42" type="stmt" count="21"/>
+        <line num="45" type="stmt" count="21"/>
+        <line num="54" type="method" name="mapWebRoutes" visibility="protected" complexity="1" crap="1" count="21"/>
+        <line num="56" type="stmt" count="21"/>
+        <line num="57" type="stmt" count="21"/>
+        <line num="58" type="stmt" count="21"/>
+        <line num="59" type="stmt" count="21"/>
+        <line num="61" type="method" name="mapAuthRoutes" visibility="protected" complexity="1" crap="1" count="21"/>
+        <line num="63" type="stmt" count="21"/>
+        <line num="64" type="stmt" count="21"/>
+        <line num="65" type="stmt" count="21"/>
+        <line num="66" type="stmt" count="21"/>
+        <line num="75" type="method" name="mapApiRoutes" visibility="protected" complexity="1" crap="1" count="21"/>
+        <line num="77" type="stmt" count="21"/>
+        <line num="78" type="stmt" count="21"/>
+        <line num="79" type="stmt" count="21"/>
+        <line num="80" type="stmt" count="21"/>
+        <line num="81" type="stmt" count="21"/>
         <metrics loc="90" ncloc="39" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
       </file>
     </package>
-    <metrics files="40" loc="1525" ncloc="936" classes="30" methods="67" coveredmethods="44" conditionals="0" coveredconditionals="0" statements="165" coveredstatements="93" elements="232" coveredelements="137"/>
+    <metrics files="40" loc="1525" ncloc="936" classes="30" methods="67" coveredmethods="45" conditionals="0" coveredconditionals="0" statements="165" coveredstatements="94" elements="232" coveredelements="139"/>
   </project>
 </coverage>
