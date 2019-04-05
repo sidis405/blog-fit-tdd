@@ -1,0 +1,32 @@
+{
+	"authHost": "https://web.funta.dev",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "0b4f18c4d9fbe982",
+			"key": "6f7df3563f41ab8cbd168b20ed15f5b5"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "https",
+	"socketio": {},
+	"sslCertPath": "/Users/sid/.valet/Certificates/blog-tdd.dev.crt",
+	"sslKeyPath": "/Users/sid/.valet/Certificates/blog-tdd.dev.key",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "http://localhost:80",
+		"allowMethods": "GET, POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+	}
+}

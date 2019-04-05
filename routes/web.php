@@ -1,6 +1,9 @@
 <?php
 
 
+Route::get('messages', 'Chat\MessagesController@index')->name('messages.index');
+Route::post('messages', 'Chat\MessagesController@store')->name('messages.store');
+
 Route::get('/', function () {
     return view('welcome');
 });
