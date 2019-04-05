@@ -34,4 +34,15 @@ class Post extends Model
         $this->attributes['title'] = $title;
         $this->attributes['slug'] = Str::slug($title);
     }
+
+    public function getFoobarAttribute()
+    {
+        logger('ping');
+        return 'baz';
+    }
+
+    public function impostaSituazione(array $param)
+    {
+        return ['foo'];
+    }
 }

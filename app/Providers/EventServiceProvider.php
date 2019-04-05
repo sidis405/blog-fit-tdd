@@ -21,10 +21,15 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
 
-        PostWasUpdated::class => [
-            SendEmailForUpdatedPostListener::class
-        ]
+        // PostWasUpdated::class => [
+        //     SendEmailForUpdatedPostListener::class
+        // ]
     ];
+
+    public function shouldDiscoverEvents()
+    {
+        return true;
+    }
 
     /**
      * Register any events for your application.

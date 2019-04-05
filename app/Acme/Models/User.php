@@ -2,10 +2,11 @@
 
 namespace Acme\Models;
 
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
@@ -39,5 +40,15 @@ class User extends Authenticatable
     public function posts()
     {
         return $this->hasMany(Post::class);
+    }
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey(); // $this->{$this->getKeyName()} ~ id
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
     }
 }

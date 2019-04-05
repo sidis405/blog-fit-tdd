@@ -5,22 +5,31 @@ namespace Acme\Http\Controllers;
 use Acme\Models\Post;
 use Illuminate\Http\Request;
 use App\Events\PostWasUpdated;
+use Acme\Repositories\PostsRepo;
+use Acme\Http\Requests\PostRequest;
 use App\Http\Controllers\Controller;
 
 class PostsController extends Controller
 {
-    public function __construct()
+    protected $postsRepo;
+
+    public function __construct(PostsRepo $postsRepo)
     {
         $this->middleware('auth')->only('create', 'store', 'edit', 'update');
+        $this->postsRepo = $postsRepo;
     }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::latest()->get();
+        $posts = $this->postsRepo->getAll();
+
+        // if ($request->wantsJson() || $request->ajax()) {
+        //     return $posts;
+        // }
 
         return view('posts.index', compact('posts'));
     }
@@ -41,17 +50,9 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'category_id' => 'required',
-        ]);
-
-        $post = auth()->user()->posts()->create([
-            'title' => $request->title,
-            'category_id' => $request->category_id,
-        ]);
+        $post = $this->postsRepo->createPost($request->validated());
 
         return redirect()->route('posts.show', $post);
     }
@@ -64,7 +65,9 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.show', compact('post'));
+        return view('posts.show')->with([
+            'post' => $this->postsRepo->show($post)
+        ]);
     }
 
     /**
@@ -87,7 +90,7 @@ class PostsController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        $post->update([
+        $post = $this->postsRepo->update($post, [
             'title' => $request->title
         ]);
 

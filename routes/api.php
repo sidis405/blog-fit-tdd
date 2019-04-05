@@ -1,9 +1,15 @@
 <?php
-use Illuminate\Http\Request;
 
-Route::get('test1', 'PostsController@index')->name('api.test1');
-Route::get('test2', 'PostsController@index')->name('api.test2');
+// auth.middleware
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// login
+Route::post('login', 'Api\LoginController')->name('api.login');
+// registration
+Route::post('register', 'Api\RegisterController')->name('api.register');
+// me
+
+Route::middleware('jwt.auth')->group(function () {
+    Route::get('me', 'Api\MeController')->name('api.me');
 });
+
+Route::as('api')->resource('posts', 'Api\PostsController')->except('destroy', 'edit', 'create');
